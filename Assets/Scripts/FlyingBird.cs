@@ -20,11 +20,13 @@ public class FlyingBird : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             rb.velocity = Vector2.up * velocity;
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Click);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Crash);
         gameManager.GameOver();
     }
 }
