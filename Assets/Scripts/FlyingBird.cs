@@ -18,7 +18,7 @@ public class FlyingBird : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = Vector2.up * velocity;
             SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Click);
