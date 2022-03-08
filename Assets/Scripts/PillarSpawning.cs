@@ -36,7 +36,7 @@ public class PillarSpawning : MonoBehaviour
             ShowCalculation.Math = num1.ToString() + "+" + num2.ToString();
             GameObject newPillar = Instantiate(pillar);
             newPillar.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
-            Destroy(newPillar, 13);
+            Destroy(newPillar, 7);
             ShowCalculation.answer = "";
             timer = 0;
         }

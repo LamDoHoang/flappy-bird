@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b67bc4207cfd04d831e8412a355a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 13
+  maxTime: 7
   pillar: {fileID: 8205171025392686095, guid: 07781d8c75d682742b1d542f482b4c4f, type: 3}
   height: 1
 --- !u!4 &170325032
