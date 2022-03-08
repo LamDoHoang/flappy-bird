@@ -10,6 +10,7 @@ public class FlyingBird : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        addingScore.gameManager = gameManager;
         gameManager.closeCanvas();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -28,5 +29,6 @@ public class FlyingBird : MonoBehaviour
     {
         SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Crash);
         gameManager.GameOver();
+        
     }
 }
