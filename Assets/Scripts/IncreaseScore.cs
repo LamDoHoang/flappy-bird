@@ -15,6 +15,6 @@ public class IncreaseScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<TMP_Text>().text = score.ToString();
+        GetComponent<TMP_Text>().text = "Point: " + score.ToString();
     }
 }
