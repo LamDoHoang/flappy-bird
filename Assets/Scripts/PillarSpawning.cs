@@ -20,7 +20,7 @@ public class PillarSpawning : MonoBehaviour
        if(timer > maxTime)
         {
             GameObject newPillar = Instantiate(pillar);
-            newPillar.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
+            newPillar.transform.position = transform.position + new Vector3(0, 1, 0);//Random.Range(-height, height), 0);
             Destroy(newPillar, 13);
             timer = 0;
         }
