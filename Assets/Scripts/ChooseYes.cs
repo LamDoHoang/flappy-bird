@@ -9,6 +9,7 @@ public class ChooseYes : MonoBehaviour
     public GameManager gameManager;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Correct);
         IncreaseScore.score++;
         
         randomMath = GameObject.FindObjectOfType(typeof(RandomMath)) as RandomMath;

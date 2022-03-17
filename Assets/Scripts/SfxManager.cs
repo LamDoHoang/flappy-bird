@@ -7,6 +7,7 @@ public class SfxManager : MonoBehaviour
     public AudioSource Audio;
     public AudioClip Click;
     public AudioClip Crash;
+    public AudioClip Correct;
     public static SfxManager sfxInstance;
 
     private void Awake()
